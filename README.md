@@ -42,7 +42,6 @@ This is a full-stack healthcare application built using the MERN (MongoDB, Expre
 - **Backend**:
   - Node.js
   - Express.js
-  - JWT (JSON Web Tokens) for authentication and authorization
 
 - **Database**:
   - MongoDB for storing user data and health records
