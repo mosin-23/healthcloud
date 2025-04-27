@@ -182,6 +182,7 @@ const StaffDashboardHeader = ({ staffName, staffAvatar, onLogout }) => {
                 <div className="border-t border-gray-700"></div>
                 <button 
                   onClick={() => {
+                    alert("Logged out!!!");
                     onLogout();
                     setShowDropdown(false);
                   }}
