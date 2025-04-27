@@ -30,7 +30,7 @@ const Register = () => {
     setLoading(true);
     
     try {
-      await axios.post('http://localhost:8800/users/register', formData);
+      await axios.post('https://healthcloud-l1hl.onrender.com/users/register', formData);
       navigate('/'); // Redirect after successful registration
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed');

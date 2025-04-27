@@ -26,7 +26,7 @@ const Prescribe = () => {
     
     try {
       const response = await axios.put(
-        `/patients/${formData.pid}`,
+        `https://healthcloud-l1hl.onrender.com/patients/${formData.pid}`,
         { prescription: formData.prescription },
         {
           headers: {

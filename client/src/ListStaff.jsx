@@ -9,7 +9,7 @@ const StaffAndDoctorsList = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8800/users/users');
+        const response = await axios.get('https://healthcloud-l1hl.onrender.com/users/users');
         // Filter only staff and doctors
         const filteredUsers = response.data.users.filter(
           user => user.role === 'staff' || user.role === 'doctor'

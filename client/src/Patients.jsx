@@ -11,7 +11,7 @@ const PatientTable = () => {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const response = await axios.get('http://localhost:8800/patients/');
+        const response = await axios.get('https://healthcloud-l1hl.onrender.com/patients/');
         setPatients(response.data);
         setLoading(false);
       } catch (err) {

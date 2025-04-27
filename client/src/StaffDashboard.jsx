@@ -32,7 +32,7 @@ const StaffDashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8800/patients', patientData);
+      await axios.post('https://healthcloud-l1hl.onrender.com/patients', patientData);
       setSubmissionStatus('success');
       // Reset form after successful submission
       setPatientData({

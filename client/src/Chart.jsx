@@ -32,7 +32,7 @@ const PatientAnalysisChart = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`http://localhost:8800/patients/${patientId}`);
+      const response = await axios.get(`https://healthcloud-l1hl.onrender.com/patients/${patientId}`);
       setPatientData(response.data);
     } catch (err) {
       setError("Failed to fetch patient data. Please check the ID.");

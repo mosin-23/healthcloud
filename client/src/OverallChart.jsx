@@ -37,7 +37,7 @@ const PatientSymptomsAnalysis = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get('http://localhost:8800/patients');
+      const response = await axios.get('https://healthcloud-l1hl.onrender.com/patients');
       setPatients(response.data);
     } catch (err) {
       setError("Failed to fetch patients. Please try again.");

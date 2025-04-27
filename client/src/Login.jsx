@@ -18,7 +18,7 @@ const Login = ({setLogged}) => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8800/users/login", {
+      const response = await axios.post("https://healthcloud-l1hl.onrender.com/users/login", {
         email,
         password,
       });

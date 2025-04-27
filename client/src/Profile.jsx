@@ -12,7 +12,7 @@ const UserProfileCard = () => {
         const uid = localStorage.getItem('uid');
         if (!uid) throw new Error('No user ID found');
         
-        const response = await axios.get(`http://localhost:8800/users/user/${uid}`);
+        const response = await axios.get(`https://healthcloud-l1hl.onrender.com/users/user/${uid}`);
         setUser(response.data.user);
       } catch (err) {
         setError(err.message);
