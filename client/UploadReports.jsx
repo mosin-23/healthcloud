@@ -40,7 +40,7 @@ const UploadForm = () => {
       setIsUploading(true);
       setProgress(0);
 
-      const res = await axios.post('http://localhost:8800/data/upload', formData, {
+      const res = await axios.post('https://healthcloud-l1hl.onrender.com/data/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
